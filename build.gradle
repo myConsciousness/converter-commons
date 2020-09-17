@@ -69,6 +69,11 @@ dependencies {
 }
 
 test {
-    // Use junit platform for unit tests
     useJUnitPlatform()
+
+    testLogging {
+        showStandardStreams true
+        events 'started', 'skipped', 'passed', 'failed'
+        exceptionFormat 'full'
+    }
 }
