@@ -6,6 +6,49 @@ It is a package that manages the generic standards and processes that perform th
 
 This package was created for use in my personal side project, but it is necessary to import this package if you want to use a package created using the standards in this package.
 
+## How To Use
+
+> **_Note:_**<br>
+> Replace version you want to use. Check the latest [Packages](https://github.com/myConsciousness/converter-commons/packages).<br>
+> Please contact me for a token to download the package.
+
+**_Maven_**
+
+```xml
+<dependency>
+  <groupId>org.thinkit.converter.common</groupId>
+  <artifactId>converter-commons</artifactId>
+  <version>v1.0.0</version>
+</dependency>
+
+<servers>
+  <server>
+    <id>github</id>
+    <username>myConsciousness</username>
+    <password>xxxxxxxxxxxxxxxxxx</password>
+  </server>
+</servers>
+```
+
+**_Gradle_**
+
+```gradle
+repositories {
+    maven {
+        name = "GitHubPackages"
+        url = uri("https://maven.pkg.github.com/myConsciousness/converter-commons")
+        credentials {
+          username = "myConsciousness"
+          password = "xxxxxxxxxxxxxxxxxx"
+        }
+    }
+}
+
+dependencies {
+    implementation 'org.thinkit.converter.common:converter-commons:v1.0.0'
+}
+```
+
 ## License
 
 ```
