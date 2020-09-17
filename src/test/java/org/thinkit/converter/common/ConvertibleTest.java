@@ -26,12 +26,11 @@ import org.junit.jupiter.api.Test;
  * @since 1.0
  * @version 1.0
  */
-public final class ConvertibleTest {
+class ConvertibleTest {
 
     @Test
     void testToString() {
         final String actual = new ConvertibleToString().convert();
-
         assertNotNull(actual);
         assertEquals("success", actual);
     }
@@ -53,7 +52,7 @@ public final class ConvertibleTest {
      * @since 1.0
      * @version 1.0
      */
-    private class ConvertibleToString implements Convertible<String> {
+    class ConvertibleToString implements Convertible<String> {
 
         @Override
         public String convert() {
@@ -68,7 +67,7 @@ public final class ConvertibleTest {
      * @since 1.0
      * @version 1.0
      */
-    private class ConvertibleToInteger implements Convertible<Integer> {
+    class ConvertibleToInteger implements Convertible<Integer> {
 
         @Override
         public Integer convert() {
@@ -83,7 +82,7 @@ public final class ConvertibleTest {
      * @since 1.0
      * @version 1.0
      */
-    private class ConvertibleToBoolean implements Convertible<Boolean> {
+    class ConvertibleToBoolean implements Convertible<Boolean> {
 
         @Override
         public Boolean convert() {
