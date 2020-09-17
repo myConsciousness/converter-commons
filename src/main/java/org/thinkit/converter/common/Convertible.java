@@ -12,7 +12,7 @@
  * the License.
  */
 
-package org.thinkit.conveter.common;
+package org.thinkit.converter.common;
 
 /**
  * 変換可能なオブジェクトを抽象化したインターフェースです。<br>
